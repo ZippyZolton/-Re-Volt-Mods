@@ -1,0 +1,26 @@
+build:
+  image: python:3.8
+  stage: build
+  script:
+  - python build.py
+  artifacts:
+    paths:
+    - repos.json
+    - index.html
+    expire_in: 20 minutes
+  only:
+  - master
+
+pages:
+  image: alpine:latest
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 day
+  only:
+  - master
