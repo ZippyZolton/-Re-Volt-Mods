@@ -1,0 +1,12 @@
+{
+    "name": "Zolton's Repo",
+    "version": "1.0",
+    "packages": {
+        "spoilersport-test": {
+            "description": "Hot Wheels car.",
+            "version": "1.0",
+            "checksum": "5842a8398e3e55aa520631825e207b984f6204fe60240a866eb650437f4fadfe",
+            "url": "https://github.com/ZippyZolton/-Re-Volt-Mods/blob/1ada1d06cb6308f81f2cc63fc8128a4ac9d431c5/spoilersport.zip"
+        }
+    }
+}
